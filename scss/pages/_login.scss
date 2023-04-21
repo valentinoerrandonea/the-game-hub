@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200;1,600&display=swap');
+
+.login-body {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: $background;
+}
+
+.login-section {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: $background;
+}
+
+.login-section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient($background, $main-color, $background
+  );
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.login-section .span4 {
+  position: relative;
+  display: block;
+  width: calc(6.35vw - 2px);
+  height: calc(6.35vw - 2px);
+  background: $background;
+  z-index: 2;
+  transition: 1.5s;
+}
+
+.login-section .span4:hover {
+  background: $main-color;
+  transition: 0s;
+}
+
+.login-section .signin {
+  position: absolute;
+  width: 400px;
+  background: $background;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.login-section .signin .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.login-section .signin .content h2 {
+  font-size: 2em;
+  color: $main-color;;
+  text-transform: uppercase;
+}
+
+.login-section .signin .content .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.login-section .signin .content .form .inputBx {
+  position: relative;
+  width: 100%;
+}
+
+.login-section .signin .content .form .inputBx input{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.login-section .signin .content .form .inputBx i {
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.login-section .signin .content .form .inputBx input:focus ~ i,
+.login-section .signin .content .form .inputBx input:valid ~ i {
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.signin .form .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signin .content .form .links a {
+ color: #fff;
+ font-weight: normal;;
+ text-decoration: none;;
+}
+
+.signin .content .form .links a:nth-child(2) {
+ color: $main-color;;
+ font-weight: 600;
+}
+
+.signin .content .form .inputBx input[type="submit"] {
+ padding: 10px;
+ background: $main-color;
+ color: #111;
+ font-weight: 600;
+ font-size: 1.25em;
+ letter-spacing: 0.05em;
+ cursor: pointer; 
+}
+
+.inputBx:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px $main-color;
+}
+
+
+.successlogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7%;
+  margin-top: 20%;
+}
+
+.btn-goback{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+  margin-top: 2rem;
+}
+
+.register{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: $main-color;
+}
+
+.newSubtitle {
+  color: #FFFF
+}

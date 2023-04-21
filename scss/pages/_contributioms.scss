@@ -1,0 +1,49 @@
+.contact-form{
+    background: $background;
+    margin-top: 3rem;
+    margin-bottom: 5%;
+    width: 70%;
+    border: 3px solid $main-color;
+    box-shadow: 0px 5px 10px 0px $main-color;
+}
+.contact-form .form-control{
+    border: 1.5px solid $main-color;
+    border-radius:1rem;
+    background-color: $background;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    box-shadow: 0px 5px 10px 0px $main-color;
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: $main-color;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: $main-color;
+    font-weight: 600;
+    color: $background;
+    cursor: pointer;
+}
+
+.btnContact:hover{
+    background: $main-color
+}
+

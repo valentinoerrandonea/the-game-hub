@@ -1,0 +1,23 @@
+#language-picker-select {
+    color: white;
+    background-color: $background;;
+    border: none;
+    padding: 7px;
+    border-radius: 5%;
+}
+
+.login-home{
+    padding: 7px;
+    color: white;
+    background-color: $background;
+}
+
+.login-home:hover{
+    font-weight: bolder;
+    color: $main-color
+}
+
+#language-picker-select:hover{
+    font-weight: bolder;
+    color: $main-color
+}

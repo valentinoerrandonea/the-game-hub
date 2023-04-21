@@ -1,0 +1,27 @@
+.card {
+    background-color: $background;
+    color: $text;
+    border: solid 3px $main-color;
+    // box-shadow: 0px 5px 10px 0px $main-color;
+    border-radius: 5%
+}
+
+.card-link {
+    border: solid 2px $main-color;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.card-link:hover {
+    font-weight: bolder;
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 24px;
+    color: $main-color
+}
+
+.card-text {
+    font-size: 18px;
+}

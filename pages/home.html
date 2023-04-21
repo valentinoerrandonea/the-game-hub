@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- CDN ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CDN FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CDN GOOGLE FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.ico">
+    <title>The GameHub</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand brand-name" href="../index.html">Game<span class="navbar-span">Hub</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./docs.html">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contributions.html">Contributions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./games.html">Browse Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lang">
+                    <div data-trigger-class="btn btn--subtle">
+                        <form action="" class="lang-form">
+                            <select name="language-picker-select" id="language-picker-select">
+                                <option lang="es" value="deutsch">Español</option>
+                                <option lang="en" value="english" selected>English</option>
+                            </select>
+                            <i class="fa-solid fa-user fa-lg" style="color: #ff4545;"></i>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+        <div class="home-main container flex-row">
+            <div class="home-container row">
+                <div class="title-container col-12">
+                    <h1 class="title">The Game<span>Hub</span></h1>
+                </div>
+            </div>
+            <div class="description-container row">
+                <p class="description col-12">Hello <span>Internaut</span>. If you just got here, I think you might be a
+                    retro-<span>gamer</span> like me, and as a retro-<span>gamer</span>, I'm pretty sure you'll like my
+                    little piece of the Internet, where I coded and uploaded some of my favorites
+                    retro-<span>games</span> (and maybe some day, some of my own...).</p>
+            </div>
+            <div class="description-container row">
+                <p class="description col-12">Well dear friend... I hope you have fun playing, as I had when I built
+                    this web-app.</p>
+            </div>
+            <div class="description-container row">
+                <p class="description col-12">Have <span>fun</span>, Internaut.</p>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="gh-btn"><a href="./games.html">Browse <span>Games</span></a> </button>
+        </div>
+
+        <!--BOOTSTRAP CARDS-->
+        <section class="home-games container">
+            <h3 class="title title2"> Top<span>Games</span></h3>
+
+            <div id="top-games-container" class="bootstrap-cards d-flex flex-row justify-content-between flex-wrap">
+                
+            </div>
+
+        </section>
+
+
+        <section class="home-news container">
+            <div class="news-title">
+                <h2 class="title title2">Blo<span>g</span></h2>
+            </div>
+
+            <div class="first-update">
+                <h3 class="subtitle">Episode <span>#1</span></h3>
+                <p class="description">Hey <span>Internaut</span> I hope you are doing fine...</p>
+                <p class="description">Today, <span>March 1st of 2023</span>, I started coding this website for you. I
+                    just started giving style to the site and coding everything correctly. The games are currently
+                    <span>under development</span>. But, I would say that this should be ready in a month or two. I'm
+                    also preparing the official <span>Docs</span> for this project.
+                </p>
+                <p class="description">I really hope that this website becomes a place in which people can come around
+                    and play retro-<span>games</span> with their friends. </p>
+                <p class="description">Thinking about including <span>ChatGPT</span> to give some help with the games...
+                </p>
+            </div>
+
+            <div class="blog-btn">
+                <button class="blog-button"><a href="./blog.html" target="_blank">Read more <span>updates</span></a></button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="text-center text-orange container">
+        <div class="container pt-4">
+            <section class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://twitter.com/val_devv"
+                    role="button" data-mdb-ripple-color="light" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                    href="https://linkedin.com/in/valentinoerrandonea" role="button" data-mdb-ripple-color="light" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                    href="https://github.com/valentinoerrandonea/gamehub-coder" role="button"
+                    data-mdb-ripple-color="light" target="_blank"><i class="fab fa-github"></i></a>
+            </section>
+        </div>
+        <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-light" href="../index.html">Game<span>Hub</span></a>
+        </div>
+    </footer>
+
+
+    <!-- main script -->
+    <script src="../js/games.js"></script>
+    <script src="../js/show-games.js"></script>
+    <!-- script boostrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- script animatejs -->
+</body>
+
+</html>

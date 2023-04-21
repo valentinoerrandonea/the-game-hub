@@ -1,0 +1,44 @@
+.docs-ul {
+    list-style: none;
+}
+
+.docs-ul li:before {
+    content: "•";
+    color: $main-color;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+}
+
+.docs-ol {
+    list-style: none;
+    counter-reset: li;
+
+    li {
+        counter-increment: li
+    }
+}
+
+
+
+.docs-ol li:before {
+    content: counter(li);
+    color: $main-color;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl
+}
+
+.docs-ol,
+.docs-ul {
+    margin-left: 3rem;
+    font-size: 18px;
+}
+
+.docs-ul-main{
+    font-size: 20px;
+    font-weight: bold;
+}

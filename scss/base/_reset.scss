@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background;
+    font-family: Poppins;
+    color: $text;
+    
+    a {
+        color: $text;
+        ;
+    }
+
+    .a-text{
+        color: $main-color;
+    }
+
+    span, .span3 {
+        color: $main-color;
+    }
+
+    .span2 {
+        color: $main-color;
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
+
+
+a:hover {
+    color: $main-color;
+    text-decoration: none;
+}
+
+span:hover{
+    font-weight: bolder;
+}
+
+
+
+
+.span2:hover {
+    box-shadow: none;
+}
+
+.a-text:hover{
+    color: $main-color;
+    font-weight: bolder;
+    text-decoration: underline;
+}
