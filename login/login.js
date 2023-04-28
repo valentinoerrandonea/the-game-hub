@@ -20,7 +20,7 @@ const findAndValidate = () => {
             color: '#FFFF',
             confirmButtonColor: '#FF4545'
         }).then(function () {
-            window.location = "https://valentinoerrandonea.github.io/the-game-hub/pages/home.html";
+            window.location = "pages/home.html";
         });
     } else {
         Swal.fire({
