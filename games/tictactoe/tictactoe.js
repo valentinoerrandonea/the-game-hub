@@ -15,7 +15,6 @@ function makeMove(index) {
           icon: "success",
           confirmButtonText: "Play Again",
           allowOutsideClick: false,
-          confirmButtonText: 'Go to The GameHub!',
           background: '#212121',
           color: '#FFFF',
           confirmButtonColor: '#FF4545'
@@ -35,7 +34,6 @@ function makeMove(index) {
           icon: "info",
           confirmButtonText: "Play Again",
           allowOutsideClick: false,
-          confirmButtonText: 'Go to The GameHub!',
           background: '#212121',
           color: '#FFFF',
           confirmButtonColor: '#FF4545'
@@ -55,7 +53,6 @@ function makeMove(index) {
               icon: "error",
               confirmButtonText: "Play Again",
               allowOutsideClick: false,
-              confirmButtonText: 'Go to The GameHub!',
               background: '#212121',
               color: '#FFFF',
               confirmButtonColor: '#FF4545'

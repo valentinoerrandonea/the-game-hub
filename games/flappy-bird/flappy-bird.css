@@ -1,41 +1,108 @@
-#game{
-  width: 500px;
-  height: 500px;
-  border: 1px solid black;
-  margin: auto;
-  overflow: hidden;
+* {
+  padding: 0;
+  margin: 0;
 }
-
-#block{
-  width: 50px;
-  height: 500px;
-  background-color: black;
+body {
+  font-family: Poppins;
+  background-color: #212121;
+  color: #FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column; /* Añadir para alinear verticalmente */
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+#game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+#game {
+  width: 400px; /* Ajustar el ancho del contenedor del juego */
+  height: 600px;
+  border: 1px solid #FF4545;
   position: relative;
-  left: 450px; /* Aumentamos la posición de inicio de los tubos */
+  overflow: hidden;
+  margin-top: 2rem; /* Añadir margen para separarlo del título y la descripción */
+}
+#block {
+  width: 50px;
+  height: 600px;
+  background-color: #FF4545;
+  position: relative;
+  left: 400px;
   animation: block 2s infinite linear;
 }
-
-@keyframes block{
-  0%{left:450px} /* Cambiamos la posición inicial en la animación también */
-  100%{left:-50px}
+@keyframes block {
+  0% {
+    left: 400px;
+  }
+  100% {
+    left: -50px;
+  }
 }
-
-#hole{
+#hole {
   width: 50px;
   height: 150px;
-  background-color: white;
   position: relative;
-  left: 450px; /* Aumentamos la posición de inicio de los tubos */
+  left: 400px;
   top: -500px;
   animation: block 2s infinite linear;
 }
-
-#character{
+#hole::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 150px;
+  background-color: #212121;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+#character {
   width: 20px;
   height: 20px;
-  background-color: red;
+  background-color: #FF4545;
   position: absolute;
-  left: 100px;
   top: 100px;
+  left: 20px;
   border-radius: 50%;
+  z-index: 3;
+}
+span {
+  color: #FF4545;
+}
+
+span:hover {
+  font-weight: bolder;
+}
+
+.HS {
+  font-size: 22px;
+  justify-self: center;
+  align-items: center;
+}
+#current-score {
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-weight: bolder;
+  font-size: 38px;
+  margin-bottom: 2rem;
+}
+.descrip {
+  font-size: 22px;
+  font-weight: bold;
 }

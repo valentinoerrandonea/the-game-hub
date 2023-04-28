@@ -1,13 +1,12 @@
-// Carga la lista de usuarios desde el localStorage
 const users = JSON.parse(localStorage.getItem('users')) || [];
 
-// Login del usuario
+
+let activeUser;
+
 const findAndValidate = () => {
-    // Obtiene los valores de los campos de entrada
     const validateUser = document.querySelector('#username').value;
     const validatePassword = document.querySelector('#password').value;
 
-    // Busca al usuario con las credenciales proporcionadas
     const credentialConfirmation = users.find(o => o.username === validateUser && o.password === validatePassword);
 
     if (credentialConfirmation) {
