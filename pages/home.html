@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CDN SWEET ALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- CDN GOOGLE FONTS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <!-- FAVICON -->
@@ -50,6 +52,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./blog.html">Blog</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#the-poke-of-the-day" class="nav-link">Pokemon of the
+                                day!</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -61,8 +67,9 @@
                                 <option lang="en" value="english" selected>English</option>
                             </select>
                             <i class="fa-solid fa-user fa-lg" style="color: #ff4545;"></i>
+
                         </form>
-                        
+
                     </div>
                 </div>
             </div>
@@ -102,7 +109,7 @@
             <h3 class="title title2"> Top<span>Games</span></h3>
 
             <div id="top-games-container" class="bootstrap-cards d-flex flex-row justify-content-between flex-wrap">
-                
+
             </div>
 
         </section>
@@ -128,7 +135,22 @@
             </div>
 
             <div class="blog-btn">
-                <button class="blog-button"><a href="./blog.html" target="_blank">Read more <span>updates</span></a></button>
+                <button class="blog-button"><a href="./blog.html" target="_blank">Read more
+                        <span>updates</span></a></button>
+            </div>
+        </section>
+
+        <section class="pokemon-of-the-day container">
+            <div class="news-title">
+                <h2 class="title title2" id="the-poke-of-the-day"><span>Pokemon</span> of the day</h2>
+            </div>
+            <div class="first-update">
+                <p class="description">In this section of The Game<span>Hub</span>, you will be able to see the
+                    <span>Pokemon</span> of the day.
+                </p>
+                <p class="description">And todays Pokemon is...</p>
+                <button class="gh-btn" id="discoverPokemon">Discover today's <span>Pokemon</span></button>
+
             </div>
         </section>
     </main>
@@ -141,8 +163,8 @@
                 <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://twitter.com/val_devv"
                     role="button" data-mdb-ripple-color="light" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-link btn-floating btn-lg text-light m-1"
-                    href="https://linkedin.com/in/valentinoerrandonea" role="button" data-mdb-ripple-color="light" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
+                    href="https://linkedin.com/in/valentinoerrandonea" role="button" data-mdb-ripple-color="light"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a class="btn btn-link btn-floating btn-lg text-light m-1"
                     href="https://github.com/valentinoerrandonea/gamehub-coder" role="button"
                     data-mdb-ripple-color="light" target="_blank"><i class="fab fa-github"></i></a>
@@ -158,6 +180,7 @@
     <!-- main script -->
     <script src="../js/games.js"></script>
     <script src="../js/show-games.js"></script>
+    <script src="../js/pokeapi.js"></script>
     <!-- script boostrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

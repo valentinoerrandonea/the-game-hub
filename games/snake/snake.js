@@ -34,18 +34,22 @@ restartButton.addEventListener("click", startGame);
 document.addEventListener("keydown", (e) => {
   switch (e.key) {
     case "w":
+    case "W":
     case "ArrowUp":
       if (direction !== "down") direction = "up";
       break;
     case "a":
+     case "A":
     case "ArrowLeft":
       if (direction !== "right") direction = "left";
       break;
     case "s":
+    case "S":
     case "ArrowDown":
       if (direction !== "up") direction = "down";
       break;
     case "d":
+    case "D":
     case "ArrowRight":
       if (direction !== "left") direction = "right";
       break;

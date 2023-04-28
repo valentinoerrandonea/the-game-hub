@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#info-container {
+  margin-bottom: 20px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #FF4545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #212121;
+}
+
+#scoreboard {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.descrip {
+  font-size: 22px;
+  margin-bottom: 2rem;
+  color: #FFFFFF;
+}
+
+.disclaimer{
+  color: #FF4545;
+  font-weight: bolder;
+  font-size: 16px;
+  margin-bottom: 7rem;
+}
+
+.home-main {
+  margin-top: 3rem;
+}
+
+span{
+  color: #FF4545;
+}
+span:hover{
+  font-weight: bolder;
+}
+
+.title {
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #FFFFFF;
+}
+
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 7rem;
+  padding: 1rem;
+}
+
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover{
+  color: #FF4545;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+

@@ -524,4 +524,9 @@ button:hover {
     width: calc(20vw - 2px);
     height: calc(20vw - 2px);
   }
-}/*# sourceMappingURL=main.css.map */
+
+}
+.gh-btn{
+  color: white
+}
+/*# sourceMappingURL=main.css.map */

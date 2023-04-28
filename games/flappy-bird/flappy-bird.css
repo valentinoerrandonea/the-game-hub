@@ -1,0 +1,41 @@
+#game{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  overflow: hidden;
+}
+
+#block{
+  width: 50px;
+  height: 500px;
+  background-color: black;
+  position: relative;
+  left: 450px; /* Aumentamos la posición de inicio de los tubos */
+  animation: block 2s infinite linear;
+}
+
+@keyframes block{
+  0%{left:450px} /* Cambiamos la posición inicial en la animación también */
+  100%{left:-50px}
+}
+
+#hole{
+  width: 50px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  left: 450px; /* Aumentamos la posición de inicio de los tubos */
+  top: -500px;
+  animation: block 2s infinite linear;
+}
+
+#character{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  border-radius: 50%;
+}
