@@ -10,11 +10,15 @@ function makeMove(index) {
     if (checkWin(board, "X")) {
       setTimeout(() => {
         Swal.fire({
-          title: "Ganaste",
-          text: "¡Felicidades! Le ganaste a la IA.",
+          title: "You won!",
+          text: "Congratulations! You won the Impossible Tic-Tac-Toe",
           icon: "success",
-          confirmButtonText: "Jugar de nuevo",
-          allowOutsideClick: false
+          confirmButtonText: "Play Again",
+          allowOutsideClick: false,
+          confirmButtonText: 'Go to The GameHub!',
+          background: '#212121',
+          color: '#FFFF',
+          confirmButtonColor: '#FF4545'
         }).then(() => location.reload());
         let playerWins = localStorage.getItem("playerWins") || 0;
         localStorage.setItem("playerWins", parseInt(playerWins) + 1);
@@ -26,11 +30,15 @@ function makeMove(index) {
     if (isBoardFull(board)) {
       setTimeout(() => {
         Swal.fire({
-          title: "Empate",
-          text: "¡Es un empate! Inténtalo de nuevo.",
+          title: "Tie!",
+          text: "It's a tie! Try again!",
           icon: "info",
-          confirmButtonText: "Jugar de nuevo",
-          allowOutsideClick: false
+          confirmButtonText: "Play Again",
+          allowOutsideClick: false,
+          confirmButtonText: 'Go to The GameHub!',
+          background: '#212121',
+          color: '#FFFF',
+          confirmButtonColor: '#FF4545'
         }).then(() => location.reload());
       }, 100);
     } else {
@@ -42,11 +50,15 @@ function makeMove(index) {
         if (checkWin(board, "O")) {
           setTimeout(() => {
             Swal.fire({
-              title: "Perdiste",
-              text: "La IA ganó. ¡Mejor suerte la próxima vez!",
+              title: "You lost!",
+              text: "The AI won. Better luck next time!",
               icon: "error",
-              confirmButtonText: "Jugar de nuevo",
-              allowOutsideClick: false
+              confirmButtonText: "Play Again",
+              allowOutsideClick: false,
+              confirmButtonText: 'Go to The GameHub!',
+              background: '#212121',
+              color: '#FFFF',
+              confirmButtonColor: '#FF4545'
             }).then(() => location.reload());
             let aiWins = localStorage.getItem("aiWins") || 0;
             localStorage.setItem("aiWins", parseInt(aiWins) + 1);
