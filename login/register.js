@@ -1,6 +1,6 @@
 const users = JSON.parse(localStorage.getItem('users')) || [];
 
-// Registro del usuario
+
 const newUser = () => {
     const yourName = document.querySelector('#new-name').value;
     const mail = document.querySelector('#new-email').value;

@@ -144,7 +144,7 @@ function moveSnake() {
       break;
   }
 
-  // Verifica si la serpiente ha chocado con los bordes o consigo misma antes de actualizar la posición de la cabeza
+
   if (newX < 0 || newY < 0 || newX >= numCols || newY >= numRows || isSnake({ x: newX, y: newY })) {
     gameOver();
     return;

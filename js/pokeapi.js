@@ -59,7 +59,7 @@ const getPokemonImage = async () => {
   const sprites = urlData.sprites;
   const urlImage = sprites.front_default;
 
-  // Guarda la imagen en la variable global
+
   pokemonImage = new Image();
   pokemonImage.src = urlImage;
   pokemonImage.onload = startGame;
