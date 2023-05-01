@@ -13,12 +13,13 @@ const showPokeAlert = async () => {
 
 
   const getUrl = pokemon.url
-  console.log(getUrl)
+
 
   const getImage = await fetch(getUrl)
   const urlData = await getImage.json()
   const sprites = (urlData.sprites)
   const urlImage = (sprites.front_default)
+
 
   console.log(pokemonName)
   discoverPokemon.addEventListener('click', () => {
@@ -38,8 +39,28 @@ const showPokeAlert = async () => {
       })
 
 
-  })
 
+  })
 }
 
 showPokeAlert()
+
+
+const getPokemonImage = async () => {
+  const resp = await fetch('https://pokeapi.co/api/v2/pokemon');
+  const data = await resp.json();
+  const pokemon = data.results[randomNumber()];
+  const pokemonName = pokemon.name;
+
+  const getUrl = pokemon.url;
+
+  const getImage = await fetch(getUrl);
+  const urlData = await getImage.json();
+  const sprites = urlData.sprites;
+  const urlImage = sprites.front_default;
+
+  // Guarda la imagen en la variable global
+  pokemonImage = new Image();
+  pokemonImage.src = urlImage;
+  pokemonImage.onload = startGame;
+};

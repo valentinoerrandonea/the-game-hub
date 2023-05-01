@@ -70,15 +70,17 @@ body {
   z-index: 2;
 }
 #character {
-  width: 20px;
-  height: 20px;
-  background-color: #FF4545;
+  width: 40px; /* Cambia a 40px para ajustar al tamaño del Pokémon */
+  height: 40px; /* Cambia a 40px para ajustar al tamaño del Pokémon */
+  background-color: transparent; /* Cambia a transparente para mostrar la imagen del Pokémon */
   position: absolute;
   top: 100px;
   left: 20px;
   border-radius: 50%;
   z-index: 3;
+  background-size: cover; /* Añade esta línea para ajustar el tamaño de la imagen del Pokémon */
 }
+
 span {
   color: #FF4545;
 }

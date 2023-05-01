@@ -1,3 +1,7 @@
+
+let pokemonImage = new Image();
+getPokemonImage();
+
 var game = document.getElementById("game");
 var block = document.getElementById("block");
 var hole = document.getElementById("hole");
@@ -49,6 +53,8 @@ setInterval(function () {
 }, 10);
 
 function jump() {
+    character.style.backgroundImage = `url(${pokemonImage.src})`; // Añade esta línea
+    character.style.backgroundColor = 'transparent'; // Añade esta línea
     jumping = 1;
     let jumpCount = 0;
     var jumpInterval = setInterval(function () {

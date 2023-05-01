@@ -1,3 +1,4 @@
+getPokemonImage()
 const canvas = document.getElementById("game-board");
 const ctx = canvas.getContext("2d");
 const gameOverElement = document.getElementById("game-over");
@@ -7,6 +8,7 @@ const highscoreElement = document.getElementById("highscore");
 const cellSize = 20;
 const numRows = 30;
 const numCols = 30;
+let pokemonImage = null
 
 const fruitImage = new Image();
 fruitImage.src = '../../assets/snake/fruit.png';
@@ -39,7 +41,7 @@ document.addEventListener("keydown", (e) => {
       if (direction !== "down") direction = "up";
       break;
     case "a":
-     case "A":
+    case "A":
     case "ArrowLeft":
       if (direction !== "right") direction = "left";
       break;
@@ -57,13 +59,21 @@ document.addEventListener("keydown", (e) => {
 });
 
 function drawCell(position, value) {
-  if (value instanceof Image) {
-      ctx.drawImage(value, position.x * cellSize, position.y * cellSize, cellSize, cellSize);
-  } else {
-      ctx.fillStyle = value;
+  if (value === "snake") {
+    if (pokemonImage) {
+      ctx.drawImage(pokemonImage, position.x * cellSize, position.y * cellSize, cellSize, cellSize);
+    } else {
+      ctx.fillStyle = "black";
       ctx.fillRect(position.x * cellSize, position.y * cellSize, cellSize, cellSize);
+    }
+  } else if (value instanceof Image) {
+    ctx.drawImage(value, position.x * cellSize, position.y * cellSize, cellSize, cellSize);
+  } else {
+    ctx.fillStyle = value;
+    ctx.fillRect(position.x * cellSize, position.y * cellSize, cellSize, cellSize);
   }
 }
+
 
 
 
@@ -84,8 +94,8 @@ function createFruit() {
   let y;
 
   do {
-      x = Math.floor(Math.random() * numCols);
-      y = Math.floor(Math.random() * numRows);
+    x = Math.floor(Math.random() * numCols);
+    y = Math.floor(Math.random() * numRows);
   } while (isSnake({ x, y }));
 
   fruit = { x, y };
@@ -147,7 +157,7 @@ function moveSnake() {
   }
 
   snake.unshift({ x: newX, y: newY }); // Mueve esta línea después de verificar la colisión
-  drawCell(snake[0], snakeImage);
+  drawCell(snake[0], 'snake');
 
   if (hasEatenFruit) {
     score++;

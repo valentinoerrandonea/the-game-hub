@@ -2,7 +2,7 @@ const games =
   [
     {
       id: 1,
-      name: "Snage",
+      name: "Snake",
       type: "Retro-Game",
       desc: "A GameHub-styled remake of the classic Snake Game, published by Gremlin back in 1976",
       play: '../games/snake/snake.html',
@@ -11,7 +11,7 @@ const games =
 
     {
       id: 1,
-      name: "The Impossible Tic-Tac-Toe",
+      name: "Tic-Tac-Toe",
       type: "Classic-Game",
       desc: "A GameHub-styled remake of your childhood game: Tic, Tac, Toe; created by someone a long time ago",
       play: '../games/tictactoe/tictactoe.html',
